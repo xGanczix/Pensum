@@ -188,3 +188,7 @@ main {
     filter: brightness(0.8);
     cursor: pointer;
 }
+
+#logout:active {
+    border: inset 2px rgba(185, 185, 185, 0.1);
+}
