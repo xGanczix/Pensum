@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontello.css">
     <title>PENSUM - Home</title>
 </head>
 
@@ -17,8 +18,8 @@
                 <hr color="#777">
             </div>
             <form action="#">
-                <input type="submit" value="Home" class="menu active">
-                <input type="submit" value="Wykładowcy" class="menu">
+                <input type="submit" value="Home" class="menu">
+                <input type="submit" value="Wykładowcy" class="menu active">
                 <input type="submit" value="Option2" class="menu">
                 <input type="submit" value="Option3" class="menu">
                 <input type="submit" value="Option4" class="menu">
@@ -26,12 +27,26 @@
             </form>
         </nav>
         <main>
-
+            <h2>Edycja Wykładowców</h2>
+            <div class="wrapper">
+                <form action="#">
+                    <div class="row" id="row">
+                        <input type="text" name="imie" placeholder="Imię" required class="row-name">
+                        <input type="text" name="nazwisko" placeholder="Nazwisko" required class="row-lastname"><br>
+                    </div>
+                    <div class="controls">
+                        <a href="#" id="add_more"><i class="icon-plus"></i></a>
+                        <a href="#" id="remove"><i class="icon-minus"></i></a>
+                    </div>
+                    <input type="submit" value="Zapisz" id="save-rows">
+                </form>
+            </div>
         </main>
         <div class="account-info">
             <span>Zalogowano:</span><span id="username">Username</span><input type="submit" value="Wyloguj" id="logout">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
